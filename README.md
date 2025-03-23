@@ -35,11 +35,11 @@ A high-performance real-time object detection system powered by YOLOv8, supporti
    # Linux/macOS
    source .venv/bin/activate
    
-#Install dependencies:
+# Install dependencies:
 pip install -r requirements.txt
 PyTorch Ultralytics
 
-#🚦 Usage
+# 🚦 Usage
 Real-Time Detection
 python real_time_detection.py
 Custom Model Inference
@@ -59,7 +59,7 @@ Prepare dataset in YOLO format:
   └── labels/
 Create data.yaml:
 
-#yaml
+# yaml
 train: ../dataset/images/train
 val: ../dataset/images/val
 names: ['class1', 'class2', ...]
@@ -72,20 +72,20 @@ detector.train_model(
     imgsz=640,
     batch=16
 )
-#🎮 Controls
+# 🎮 Controls
 Action	Key
 Quit Detection	q
 Toggle Confidence	c
 Save Frame	s
 
-#📦 Requirements
+# 📦 Requirements
 
 Python 3.8+ Python
 NVIDIA GPU (recommended) CUDA
 Webcam or video source
 See requirements.txt for full package list
 
-#📝 Notes
+# 📝 Notes
 ⚡ Auto GPU Detection: Uses CUDA if available, falls back to CPU
 
 🔧 Configurable Threshold: Adjust confidence in code (default: 0.25)
