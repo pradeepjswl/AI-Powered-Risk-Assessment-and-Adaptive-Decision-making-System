@@ -1,0 +1,12 @@
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+torch>=2.0.0
+torchvision>=0.15.0
+Pillow>=10.0.0
+matplotlib>=3.7.0
+playsound>=1.3.0  # For warning sounds
+scipy>=1.10.0  # For signal processing
+pandas>=2.0.0  # For data analysis
+pydub>=0.25.1
+requests>=2.31.0 
