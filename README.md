@@ -51,18 +51,23 @@ detector = RealTimeObjectDetection(
     confidence=0.45  # Adjust detection threshold
 )
 detector.run_realtime()
-🎓 Training a Custom Model
+# 🎓 Training a Custom Model
 Prepare dataset in YOLO format:
 
-#dataset/
-  ├── images/
-  └── labels/
-Create data.yaml:
+dataset/
 
-# yaml
+  ├── images/
+  
+  └── labels/
+  
+# Create data.yaml:
+yaml
 train: ../dataset/images/train
+
 val: ../dataset/images/val
+
 names: ['class1', 'class2', ...]
+
 Start training:
 
 detector = RealTimeObjectDetection()
@@ -74,8 +79,11 @@ detector.train_model(
 )
 # 🎮 Controls
 Action	Key
+
 Quit Detection	q
+
 Toggle Confidence	c
+
 Save Frame	s
 
 # 📦 Requirements
